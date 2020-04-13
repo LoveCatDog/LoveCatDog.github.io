@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Christmas Eve | LoveCatDog</title><meta name="description" content="平安夜，吃一个苹果代表平安的话，那我吃两个苹果，是不是就可以平平安安！"><meta name="keywords" content="Festival"><meta name="author" content="会吃鱼的猫"><meta name="copyright" content="会吃鱼的猫"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://hm.baidu.com"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="baidu-site-verification" content="RFDoZkn4Yp"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Christmas Eve"><meta name="twitter:description" content="平安夜，吃一个苹果代表平安的话，那我吃两个苹果，是不是就可以平平安安！"><meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1577161924866&amp;di=d0ed2c2dc2e308935fae3eda69cc333b&amp;imgtype=0&amp;src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1912%2F1230-1912231A459227.jpg"><meta property="og:type" content="article"><meta property="og:title" content="Christmas Eve"><meta property="og:url" content="https://lovecatdog.github.io/2019/12/24/Ping-An-Ye/"><meta property="og:site_name" content="LoveCatDog"><meta property="og:description" content="平安夜，吃一个苹果代表平安的话，那我吃两个苹果，是不是就可以平平安安！"><meta property="og:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1577161924866&amp;di=d0ed2c2dc2e308935fae3eda69cc333b&amp;imgtype=0&amp;src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1912%2F1230-1912231A459227.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="https://lovecatdog.github.io/2019/12/24/Ping-An-Ye/"><link rel="prev" title="19年倒计时" href="https://lovecatdog.github.io/2019/12/28/daojishi/"><link rel="next" title="冬至" href="https://lovecatdog.github.io/2019/12/22/Dong-Zhi/"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1e40f6d21c37a071ae4227ba97e3d222";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://lovecatdog.github.io/","msgToTraditionalChinese":"简","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: true,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">LoveCatDog</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-fw fa fa-coffee"></i><span> MessagesBoard</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/./img/my.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">18</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-fw fa fa-coffee"></i><span> MessagesBoard</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#平安夜-amp-amp-圣诞节"><span class="toc_mobile_items-text">平安夜 &amp;&amp; 圣诞节</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1-圣诞新年"><span class="toc_mobile_items-text">1.圣诞新年</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2-唱圣诞歌"><span class="toc_mobile_items-text">2.唱圣诞歌</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#3-平安果文案"><span class="toc_mobile_items-text">3.平安果文案</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#4-圣诞节送什么礼物给女朋友"><span class="toc_mobile_items-text">4.圣诞节送什么礼物给女朋友?</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#平安夜-amp-amp-圣诞节"><span class="toc-text">平安夜 &amp;&amp; 圣诞节</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-圣诞新年"><span class="toc-text">1.圣诞新年</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-唱圣诞歌"><span class="toc-text">2.唱圣诞歌</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-平安果文案"><span class="toc-text">3.平安果文案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-圣诞节送什么礼物给女朋友"><span class="toc-text">4.圣诞节送什么礼物给女朋友?</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1577162752535&amp;di=0a3bb4d6291451c48d6e8a5884d0b8ee&amp;imgtype=0&amp;src=http%3A%2F%2Foss.tan8.com%2Fyuepuku%2F112%2F56402%2F56402_prev.jpg%3Fv%3D1509110240)"><div id="post-info"><div id="post-title"><div class="posttitle">Christmas Eve</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2019-12-24<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-04-10</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Festival/">Festival</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">1.7k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 4 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2019/12/24/Ping-An-Ye/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2019/12/24/Ping-An-Ye/" itemprop="commentCount"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><p>平安夜、圣诞节即将来了，难道送女朋友的礼物还没安排上吗？</p>
+<p>一定要抓住这个机会哦，</p>
+<p>否则这个年都不好过了，</p>
+<p>哈哈哈哈哈哈.</p>
+<p><a href="https://th.wallhaven.cc/small/gj/gj9e7e.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="平安夜、圣诞节" class="fancybox"><img alt="平安夜、圣诞节" title="平安夜、圣诞节" data-src="https://th.wallhaven.cc/small/gj/gj9e7e.jpg" class="lazyload"></a></p>
+<h2 id="平安夜-amp-amp-圣诞节"><a href="#平安夜-amp-amp-圣诞节" class="headerlink" title="平安夜 && 圣诞节"></a>平安夜 && 圣诞节</h2><h3 id="1-圣诞新年"><a href="#1-圣诞新年" class="headerlink" title="1.圣诞新年"></a>1.圣诞新年</h3><p>平安夜指12月24日晚，是圣诞夜的意思，英语叫Christmas Eve（圣诞前夕，圣诞前夜），平安夜也用来表示圣诞节前一天。巧得很，和中国民间的“扫尘节”一样（夏历12月24日，在全国大部分地区的家庭里都要扫尘，“尘”和“陈”谐音，“扫尘”因而有“除旧”的意思），在旧时的欧洲，平安夜也是扫尘的日子。这一天尤其对农村的父母来说，是非常辛劳的一天。他们要为圣诞节和新年做许许多多事情：忙地里活、照料牲口、擦地板、洗厨具、烤圣诞鹅、做蛋糕、布置圣诞树、张罗圣诞礼物……等到全家团聚欢庆平安夜的时候，父母们通常已经累得直不起腰了。</p>
+<p>很多人询问平安夜的由来。圣诞节是指12月25日，平安夜是指12月24日是圣诞前夕，称为圣诞夜，也称为平安夜。届时，千千万万的欧美人风尘仆仆地赶回家中团聚。圣诞之夜必不可少的节目是Party或聚会。大多数欧美家庭成员团聚在家中，共进丰盛的晚餐，然后围坐在熊熊燃烧的火炉旁，弹琴唱歌，共叙天伦之乐；或者举办一个别开生面的化妆舞会，通宵达旦地庆祝圣诞夜是一个幸福、祥和、狂欢的平安夜、团圆夜。圣诞之夜，父母们会悄悄地给孩子们准备礼物放在长统袜里。</p>
+<p>圣诞夜的高潮是基督教堂在圣诞夜举行的活动。圣诞夜弥撒一般分为两次，晚上9～10点的一次对教众举行；另一次是子夜时分的大弥撒，这是圣诞夜的高潮。子夜大弥撒在午夜结束，此时，正好圣诞节来临，常常伴随着教堂的钟声，敲响了对世界的宽恕、祝福和欢乐、幸福。</p>
+<h3 id="2-唱圣诞歌"><a href="#2-唱圣诞歌" class="headerlink" title="2.唱圣诞歌"></a>2.唱圣诞歌</h3><p>圣诞夜唱圣诞歌，这是古老的传统；据不完全统计，全世界有记载的圣诞歌约有上千首；久唱不衰的有五十几首，而最有名的圣诞歌是《平安夜》。这首歌共有6小节，通常流行的是3小节（原作中的第一、第二和第六小节）第一节的歌词大意为：平安夜，神圣的夜！/人人安息，/至圣独醒。/慈祥鬈发的儿子，/睡吧，在美妙的宁静中，/睡吧，在美妙的宁静中。第一句就是“平安夜”，歌名因此也叫《平安夜》，从此，圣诞夜就得名“平安夜”。 </p>
+<p>1792年12月11日，约瑟夫·莫尔作为编织女工安娜·朔伊贝尔和当地驻军的一个步兵的私生子在奥地利萨尔茨堡出生，父亲因害怕而逃走。洗礼时，只好请了萨尔茨堡的一个名叫约瑟夫·沃尔格穆特的刽子手当教父。莫尔心地善良，好为弱者、穷人和孩子们做事，但不幸的身世使年轻的莫尔不断受到驱赶，直至1815年，莫尔才担任萨尔茨堡附近奥伯恩多夫小镇的牧师，在那儿的集市上认识了来自邻镇阿恩斯多夫的小学教师和集市组织者弗兰茨·克萨弗·格鲁贝尔，两人成了好朋友。莫尔（作词）和格鲁贝尔（作曲）合作的圣诞歌《平安夜》于1818年12月24日首次在奥伯恩多夫镇教堂演唱，由于管风琴被老鼠咬坏，临时改用吉他伴奏。顺便提一下，《平安夜》几乎译成了全世界所有的语言，歌词原文是用德语写的，第一句是Stille Nacht（寂静的夜或安静的夜），安静或寂静与“平安”还是有区别的，但最早就以“平安夜”被译成了中文，先入为主吧。</p>
+<p>1914年12月24日，参加第一次世界大战的各国士兵自发停战，他们从广播中听到了奥地利歌剧女演员奥丽丝·舒曼演唱的《平安夜》。此时此刻，她的两个儿子都在前线聆听母亲的演唱，一个在德军的战壕里，另一个在协约国军队的前沿阵地，他们多么希望战争早日结束，回家和母亲团聚。<br>不管在哪里、如何欢度平安夜，需要记住的是，《平安夜》见证了世界人民渴望和平的心愿，在平安夜要感恩你们的父母亲。</p>
+<h3 id="3-平安果文案"><a href="#3-平安果文案" class="headerlink" title="3.平安果文案"></a>3.平安果文案</h3><ol>
+<li><p>平安夜，吃一个苹果代表平安的话，那我吃两个苹果，是不是就可以平平安安！</p>
+</li>
+<li><p>比平安夜收不到苹果更心酸的事，大概就是送不出苹果了吧。</p>
+</li>
+<li><p>今天平安夜记得吃苹果，明天圣诞节记得吃圣诞树。</p>
+</li>
+<li><p>如果在平安夜没有收到我的任何表示，请不要怀疑我们的友谊，我只是穷了而已。</p>
+</li>
+<li><p>是平安夜是圣诞节，是落叶是初雪，是你喜欢的音乐我喜欢的句子，还有你。</p>
+</li>
+<li><p>听说在平安夜的晚上，把袜子翻过来，里朝外，挂起来，整个世界都是你的礼物。</p>
+</li>
+<li><p>把麋鹿挂在圣诞树上，把我挂在你心上。</p>
+</li>
+<li><p>我是铃儿你是叮当，因为铃儿响叮当。</p>
+</li>
+<li><p>merry Christmas不如marry me。</p>
+</li>
+<li><p>我可以做你的平安果吗。</p>
+</li>
+</ol>
+<h3 id="4-圣诞节送什么礼物给女朋友"><a href="#4-圣诞节送什么礼物给女朋友" class="headerlink" title="4.圣诞节送什么礼物给女朋友?"></a>4.圣诞节送什么礼物给女朋友?</h3><ol>
+<li><p>我跟圣诞老人说礼物是我 小朋友 是你</p>
+</li>
+<li><p>圣诞老人说他很忙，于是托我告诉你他把你的礼物放在了镜子里，只要你冲着它笑，礼物就会出现在你面前！</p>
+</li>
+<li><p>你不是老吵着圣诞节要礼物遇到我就是上天给你最好的礼物</p>
+</li>
+<li><p>我是铃儿你是叮当因为铃儿想叮当</p>
+</li>
+<li><p>如果有一天你被圣诞老人装进袋子里别担心 因为你就是我要的圣诞礼物</p>
+</li>
+<li><p>你把前置摄像头打开 看到了吗里面是我最想要的圣诞礼物</p>
+</li>
+<li><p>我收到过最好的圣诞礼物是穿越风雪为我而来的你</p>
+</li>
+<li><p>我是白胡子老头快开门 我送礼物来了哟</p>
+</li>
+<li><p>让我住进你心里就是你给我最好的圣诞礼物</p>
+</li>
+<li><p>把麋鹿挂在圣诞树上把你挂在我心上</p>
+</li>
+</ol>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">会吃鱼的猫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lovecatdog.github.io/2019/12/24/Ping-An-Ye/">https://lovecatdog.github.io/2019/12/24/Ping-An-Ye/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lovecatdog.github.io">LoveCatDog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Festival/">Festival    </a></div><div class="post_share"><div class="social-share" data-image="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1577161924866&amp;di=d0ed2c2dc2e308935fae3eda69cc333b&amp;imgtype=0&amp;src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1912%2F1230-1912231A459227.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/./img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/./img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/12/28/daojishi/"><img class="prev_cover lazyload" data-src="https://w.wallhaven.cc/full/4l/wallhaven-4l2x2q.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>19年倒计时</span></div></a></div><div class="next-post pull_right"><a href="/2019/12/22/Dong-Zhi/"><img class="next_cover lazyload" data-src="http://wx2.sinaimg.cn/orj360/006zeijzgy1ga5d5xwj9uj30gu0b9ajh.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>冬至</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = true == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'Y37T7Fpa08tJzA8Yu3ytYxUn-gzGzoHsz',
+  appKey:'3gQdh28WvdTKTcIsgat6NErV',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By 会吃鱼的猫</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://lovecatdog.github.io/">blog</a>!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">简体中文</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script id="ribbon_piao" mobile="undefined" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true; 
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/js/tw_cn.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script></body></html>
